@@ -120,15 +120,17 @@
         Accept: 'application/vnd.github.v3.raw'
       },
       type: 'get',
-      url: 'https://api.github.com/users/undefined/repos',
+      url: 'https://api.github.com/users/rohmikwon/repos',
       success: function (data) {
         var repos = data.sort(function(a, b) {
           return (b.stargazers_count - a.stargazers_count)
-        }).slice(0, 6)
+        }).slice(0, 10)
         var cardHtml = repos.map(function(item) {
           var description = item.description
-          if (description.replace(/[\u0391-\uFFE5]/g, "aa").length > 72) {
+          if (!!description && description.replace(/[\u0391-\uFFE5]/g, "aa").length > 72) {
             description = description.slice(0, 72) + '...'
+          }else{
+            description = ''
           }
           return (
             '<section class="project-card">' + 

@@ -7,7 +7,7 @@
   <meta name="keyword" content="hexo, hexo-theme-vexo">
   <title>
     
-      hello | Rohmi&#39;s blog
+      Performance Comparisons | Rohmi&#39;s blog
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -104,7 +104,7 @@
 </header>
 
     <div id="article-banner">
-  <h2>hello</h2>
+  <h2>Performance Comparisons</h2>
   <p class="post-date">2017-07-23</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
@@ -112,19 +112,22 @@
 </div>
 <main class="app-body">
   <article class="post-article">
-    <section class="markdown-content"></section>
-    
-      <div class="tags">
-        <span>Tags:</span>
-        
-  <a href="/tags#hexo" >
-    <span class="tag-code">hexo</span>
-  </a>
-
-      </div>
+    <section class="markdown-content"><h2 id="TodoMVC-Benchmark"><a href="#TodoMVC-Benchmark" class="headerlink" title="TodoMVC Benchmark"></a>TodoMVC Benchmark</h2><blockquote>
+<p><em>Last Updated: 2014-10-12</em></p>
+</blockquote>
+<p>Looking for the TodoMVC Benchmark? It’s been removed because after discussion with some other framework authors we have agreed that:</p>
+<ol>
+<li><p>The original intention of these benchmarks were for comparing Browser performance rather than that of frameworks. The “synchrorously trigger an action xxx times” test routine doesn’t reflect meaningful real world user actions.</p>
+</li>
+<li><p>Due to internal implementation differences, frameworks that uses async rendering (e.g. Vue, Om, Mercury) gains the advantage by skipping part of the calculations that happened in the same event loop. The real world user experience doesn’t demonstrate such dramatic difference.</p>
+</li>
+<li><p>Overall this benchmark suite gave rise to more controversy than constructive insights, so it’s been removed and I’d be happy to replace it with a more meaningful way to measure front-end performance.</p>
+</li>
+</ol>
+</section>
     
     <div class="article-share-wrap">
-      <a data-url="https://rohmikwon.github.io/2017/07/23/hello/" data-id="cj5h2bkuh00010g9zsgcomqcs" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+      <a data-url="https://rohmikwon.github.io/perf/index.html" data-id="cj5h2bkuq00060g9zhnlx56ud" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -192,7 +195,7 @@
 
 <script>
   (function () {
-    var url = 'https://rohmikwon.github.io/2017/07/23/hello/';
+    var url = 'https://rohmikwon.github.io/perf/index.html';
     $('#article-banner').geopattern(url)
     $('.header').removeClass('fixed-header')
 
@@ -230,7 +233,7 @@
     var gitmentConfig = "rohmikwon";
     if (gitmentConfig != "undefined") {
       var gitment = new Gitment({
-        id: "hello",
+        id: "Performance Comparisons",
         owner: "rohmikwon",
         repo: "rohmikwon.github.io",
         oauth: {
