@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rohmi&#39;s blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://rohmikwon.github.io/"/>
+  <updated>2017-07-23T15:46:10.913Z</updated>
+  <id>https://rohmikwon.github.io/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello</title>
+    <link href="https://rohmikwon.github.io/2017/07/23/hello/"/>
+    <id>https://rohmikwon.github.io/2017/07/23/hello/</id>
+    <published>2017-07-23T06:56:28.000Z</published>
+    <updated>2017-07-23T15:46:10.913Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://rohmikwon.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="프론트엔드 개발자 로미의 블로그입니다.">
+  <meta name="keyword" content="hexo, hexo-theme-vexo">
+  <title>
+    
+      Plugins | Rohmi&#39;s blog
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+</head>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <span>Rohmi's blog</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>Plugins</h2>
+  <p class="post-date">2017-07-23</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><h2 id="Writing-a-Plugin"><a href="#Writing-a-Plugin" class="headerlink" title="Writing a Plugin"></a>Writing a Plugin</h2><p>Plugins usually add global-level functionality to Vue. There is no strictly defined scope for a plugin - there are typically several types of plugins you can write:</p>
+<ol>
+<li><p>Add some global methods or properties. e.g. <a href="https://github.com/karol-f/vue-custom-element" target="_blank" rel="external">vue-custom-element</a></p>
+</li>
+<li><p>Add one or more global assets: directives/filters/transitions etc. e.g. <a href="https://github.com/vuejs/vue-touch" target="_blank" rel="external">vue-touch</a></p>
+</li>
+<li><p>Add some component options by global mixin. e.g. <a href="https://github.com/vuejs/vuex" target="_blank" rel="external">vuex</a></p>
+</li>
+<li><p>Add some Vue instance methods by attaching them to Vue.prototype.</p>
+</li>
+<li><p>A library that provides an API of its own, while at the same time injecting some combination of the above. e.g. <a href="https://github.com/vuejs/vue-router" target="_blank" rel="external">vue-router</a></p>
+</li>
+</ol>
+<p>A Vue.js plugin should expose an <code>install</code> method. The method will be called with the <code>Vue</code> constructor as the first argument, along with possible options:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">MyPlugin.install = <span class="function"><span class="keyword">function</span> (<span class="params">Vue, options</span>) </span>&#123;</div><div class="line">  <span class="comment">// 1. add global method or property</span></div><div class="line">  Vue.myGlobalMethod = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// something logic ...</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// 2. add a global asset</span></div><div class="line">  Vue.directive(<span class="string">'my-directive'</span>, &#123;</div><div class="line">    bind (el, binding, vnode, oldVnode) &#123;</div><div class="line">      <span class="comment">// something logic ...</span></div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="comment">// 3. inject some component options</span></div><div class="line">  Vue.mixin(&#123;</div><div class="line">    <span class="attr">created</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="comment">// something logic ...</span></div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="comment">// 4. add an instance method</span></div><div class="line">  Vue.prototype.$myMethod = <span class="function"><span class="keyword">function</span> (<span class="params">methodOptions</span>) </span>&#123;</div><div class="line">    <span class="comment">// something logic ...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Using-a-Plugin"><a href="#Using-a-Plugin" class="headerlink" title="Using a Plugin"></a>Using a Plugin</h2><p>Use plugins by calling the <code>Vue.use()</code> global method:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// calls `MyPlugin.install(Vue)`</span></div><div class="line">Vue.use(MyPlugin)</div></pre></td></tr></table></figure>
+<p>You can optionally pass in some options:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.use(MyPlugin, &#123; <span class="attr">someOption</span>: <span class="literal">true</span> &#125;)</div></pre></td></tr></table></figure>
+<p><code>Vue.use</code> automatically prevents you from using the same plugin more than once, so calling it multiple times on the same plugin will install the plugin only once.</p>
+<p>Some plugins provided by Vue.js official plugins such as <code>vue-router</code> automatically calls <code>Vue.use()</code> if <code>Vue</code> is available as a global variable. However in a module environment such as CommonJS, you always need to call <code>Vue.use()</code> explicitly:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// When using CommonJS via Browserify or Webpack</span></div><div class="line"><span class="keyword">var</span> Vue = <span class="built_in">require</span>(<span class="string">'vue'</span>)</div><div class="line"><span class="keyword">var</span> VueRouter = <span class="built_in">require</span>(<span class="string">'vue-router'</span>)</div><div class="line"></div><div class="line"><span class="comment">// Don't forget to call this</span></div><div class="line">Vue.use(VueRouter)</div></pre></td></tr></table></figure>
+<p>Checkout <a href="https://github.com/vuejs/awesome-vue#components--libraries" target="_blank" rel="external">awesome-vue</a> for a huge collection of community-contributed plugins and libraries.</p>
+</section>
+    
+    <div class="article-share-wrap">
+      <a data-url="https://rohmikwon.github.io/v2/guide/plugins.html" data-id="cj5gt9c1e001mck9zuuhi9rbk" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+    </div>
+    
+      <div id="comments"></div>
+    
+  </article>
+</main>
+
+<script>
+  (function () {
+    var url = 'https://rohmikwon.github.io/v2/guide/plugins.html';
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png') 
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+      
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // gitment
+    var gitmentConfig = "rohmikwon";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        id: "Plugins",
+        owner: "rohmikwon",
+        repo: "rohmikwon.github.io",
+        oauth: {
+          client_id: "829e65afa6fa7096959c",
+          client_secret: "e85b73b6121d9dfb570519f2c3b5ad0932db04fe"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2017 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>, <a href="https://github.com/yanm1ng/hexo-theme-vexo" target="_blank">hexo-theme-vexo</a>
+    <br>
+    Theme by <a href="https://github.com/RohMiKwon">RohMiKwon</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'false';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine == 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+  </body>
+</html>

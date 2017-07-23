@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="프론트엔드 개발자 로미의 블로그입니다.">
+  <meta name="keyword" content="hexo, hexo-theme-vexo">
+  <title>
+    
+      Custom Directives | Rohmi&#39;s blog
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+</head>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <span>Rohmi's blog</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>Custom Directives</h2>
+  <p class="post-date">2017-07-23</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>In addition to the default set of directives shipped in core (<code>v-model</code> and <code>v-show</code>), Vue also allows you to register your own custom directives. Note that in Vue 2.0, the primary form of code reuse and abstraction is components - however there may be cases where you just need some low-level DOM access on plain elements, and this is where custom directives would still be useful. An example would be focusing on an input element, like this one:</p>
+
+<div id="simplest-directive-example" class="demo">
+  <input v-focus="">
+</div>
+<script>
+Vue.directive('focus', {
+  inserted: function (el) {
+    el.focus()
+  }
+})
+new Vue({
+  el: '#simplest-directive-example'
+})
+</script>
+
+<p>When the page loads, that element gains focus (note: autofocus doesn’t work on mobile Safari). In fact, if you haven’t clicked on anything else since visiting this page, the input above should be focused now. Now let’s build the directive that accomplishes this:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Register a global custom directive called v-focus</span></div><div class="line">Vue.directive(<span class="string">'focus'</span>, &#123;</div><div class="line">  <span class="comment">// When the bound element is inserted into the DOM...</span></div><div class="line">  inserted: <span class="function"><span class="keyword">function</span> (<span class="params">el</span>) </span>&#123;</div><div class="line">    <span class="comment">// Focus the element</span></div><div class="line">    el.focus()</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>If you want to register a directive locally instead, components also accept a <code>directives</code> option:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">directives: &#123;</div><div class="line">  <span class="attr">focus</span>: &#123;</div><div class="line">    <span class="comment">// directive definition</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Then in a template, you can use the new <code>v-focus</code> attribute on any element, like this:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-focus</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Hook-Functions"><a href="#Hook-Functions" class="headerlink" title="Hook Functions"></a>Hook Functions</h2><p>A directive definition object can provide several hook functions (all optional):</p>
+<ul>
+<li><p><code>bind</code>: called only once, when the directive is first bound to the element. This is where you can do one-time setup work.</p>
+</li>
+<li><p><code>inserted</code>: called when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document).</p>
+</li>
+<li><p><code>update</code>: called after the containing component has updated, <strong>but possibly before its children have updated</strong>. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments).</p>
+</li>
+<li><p><code>componentUpdated</code>: called after the containing component <strong>and its children</strong> have updated.</p>
+</li>
+<li><p><code>unbind</code>: called only once, when the directive is unbound from the element.</p>
+</li>
+</ul>
+<p>We’ll explore the arguments passed into these hooks (i.e. <code>el</code>, <code>binding</code>, <code>vnode</code>, and <code>oldVnode</code>) in the next section.</p>
+<h2 id="Directive-Hook-Arguments"><a href="#Directive-Hook-Arguments" class="headerlink" title="Directive Hook Arguments"></a>Directive Hook Arguments</h2><p>Directive hooks are passed these arguments:</p>
+<ul>
+<li><strong>el</strong>: The element the directive is bound to. This can be used to directly manipulate the DOM.</li>
+<li><strong>binding</strong>: An object containing the following properties.<ul>
+<li><strong>name</strong>: The name of the directive, without the <code>v-</code> prefix.</li>
+<li><strong>value</strong>: The value passed to the directive. For example in <code>v-my-directive=&quot;1 + 1&quot;</code>, the value would be <code>2</code>.</li>
+<li><strong>oldValue</strong>: The previous value, only available in <code>update</code> and <code>componentUpdated</code>. It is available whether or not the value has changed.</li>
+<li><strong>expression</strong>: The expression of the binding as a string. For example in <code>v-my-directive=&quot;1 + 1&quot;</code>, the expression would be <code>&quot;1 + 1&quot;</code>.</li>
+<li><strong>arg</strong>: The argument passed to the directive, if any. For example in <code>v-my-directive:foo</code>, the arg would be <code>&quot;foo&quot;</code>.</li>
+<li><strong>modifiers</strong>: An object containing modifiers, if any. For example in <code>v-my-directive.foo.bar</code>, the modifiers object would be <code>{ foo: true, bar: true }</code>.</li>
+</ul>
+</li>
+<li><strong>vnode</strong>: The virtual node produced by Vue’s compiler. See the <a href="../api/#VNode-Interface">VNode API</a> for full details.</li>
+<li><strong>oldVnode</strong>: The previous virtual node, only available in the <code>update</code> and <code>componentUpdated</code> hooks.</li>
+</ul>
+<p class="tip">Apart from <code>el</code>, you should treat these arguments as read-only and never modify them. If you need to share information across hooks, it is recommended to do so through element’s <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset" target="_blank" rel="external">dataset</a>.</p>
+
+<p>An example of a custom directive using some of these properties:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"hook-arguments-example"</span> <span class="attr">v-demo:foo.a.b</span>=<span class="string">"message"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.directive(<span class="string">'demo'</span>, &#123;</div><div class="line">  <span class="attr">bind</span>: <span class="function"><span class="keyword">function</span> (<span class="params">el, binding, vnode</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> s = <span class="built_in">JSON</span>.stringify</div><div class="line">    el.innerHTML =</div><div class="line">      <span class="string">'name: '</span>       + s(binding.name) + <span class="string">'&lt;br&gt;'</span> +</div><div class="line">      <span class="string">'value: '</span>      + s(binding.value) + <span class="string">'&lt;br&gt;'</span> +</div><div class="line">      <span class="string">'expression: '</span> + s(binding.expression) + <span class="string">'&lt;br&gt;'</span> +</div><div class="line">      <span class="string">'argument: '</span>   + s(binding.arg) + <span class="string">'&lt;br&gt;'</span> +</div><div class="line">      <span class="string">'modifiers: '</span>  + s(binding.modifiers) + <span class="string">'&lt;br&gt;'</span> +</div><div class="line">      <span class="string">'vnode keys: '</span> + <span class="built_in">Object</span>.keys(vnode).join(<span class="string">', '</span>)</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#hook-arguments-example'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">message</span>: <span class="string">'hello!'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+
+<div id="hook-arguments-example" v-demo:foo.a.b="message" class="demo"></div>
+<script>
+Vue.directive('demo', {
+  bind: function (el, binding, vnode) {
+    var s = JSON.stringify
+    el.innerHTML =
+      'name: '       + s(binding.name) + '<br>' +
+      'value: '      + s(binding.value) + '<br>' +
+      'expression: ' + s(binding.expression) + '<br>' +
+      'argument: '   + s(binding.arg) + '<br>' +
+      'modifiers: '  + s(binding.modifiers) + '<br>' +
+      'vnode keys: ' + Object.keys(vnode).join(', ')
+  }
+})
+new Vue({
+  el: '#hook-arguments-example',
+  data: {
+    message: 'hello!'
+  }
+})
+</script>
+
+<h2 id="Function-Shorthand"><a href="#Function-Shorthand" class="headerlink" title="Function Shorthand"></a>Function Shorthand</h2><p>In many cases, you may want the same behavior on <code>bind</code> and <code>update</code>, but don’t care about the other hooks. For example:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.directive(<span class="string">'color-swatch'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">el, binding</span>) </span>&#123;</div><div class="line">  el.style.backgroundColor = binding.value</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="Object-Literals"><a href="#Object-Literals" class="headerlink" title="Object Literals"></a>Object Literals</h2><p>If your directive needs multiple values, you can also pass in a JavaScript object literal. Remember, directives can take any valid JavaScript expression.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-demo</span>=<span class="string">"&#123; color: 'white', text: 'hello!' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.directive(<span class="string">'demo'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">el, binding</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(binding.value.color) <span class="comment">// =&gt; "white"</span></div><div class="line">  <span class="built_in">console</span>.log(binding.value.text)  <span class="comment">// =&gt; "hello!"</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</section>
+    
+    <div class="article-share-wrap">
+      <a data-url="https://rohmikwon.github.io/v2/guide/custom-directive.html" data-id="cj5gt9c180019ck9zpdqprp2f" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+    </div>
+    
+      <div id="comments"></div>
+    
+  </article>
+</main>
+
+<script>
+  (function () {
+    var url = 'https://rohmikwon.github.io/v2/guide/custom-directive.html';
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png') 
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+      
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // gitment
+    var gitmentConfig = "rohmikwon";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        id: "Custom Directives",
+        owner: "rohmikwon",
+        repo: "rohmikwon.github.io",
+        oauth: {
+          client_id: "829e65afa6fa7096959c",
+          client_secret: "e85b73b6121d9dfb570519f2c3b5ad0932db04fe"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2017 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>, <a href="https://github.com/yanm1ng/hexo-theme-vexo" target="_blank">hexo-theme-vexo</a>
+    <br>
+    Theme by <a href="https://github.com/RohMiKwon">RohMiKwon</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'false';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine == 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+  </body>
+</html>
