@@ -5,24 +5,28 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rohmikwon.github.io/"/>
-  <updated>2017-07-23T15:46:10.913Z</updated>
+  <updated>2017-07-23T20:00:46.958Z</updated>
   <id>https://rohmikwon.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hello</title>
-    <link href="https://rohmikwon.github.io/2017/07/23/hello/"/>
-    <id>https://rohmikwon.github.io/2017/07/23/hello/</id>
-    <published>2017-07-23T06:56:28.000Z</published>
-    <updated>2017-07-23T15:46:10.913Z</updated>
+    <title>Hello</title>
+    <link href="https://rohmikwon.github.io/2017/07/24/Hello/"/>
+    <id>https://rohmikwon.github.io/2017/07/24/Hello/</id>
+    <published>2017-07-23T20:00:19.000Z</published>
+    <updated>2017-07-23T20:00:46.958Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo 기반 블로그 입니다.</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;hexo 기반 블로그 입니다.&lt;/p&gt;
+
+    
     </summary>
     
-    
-      <category term="hexo" scheme="https://rohmikwon.github.io/tags/hexo/"/>
     
   </entry>
   

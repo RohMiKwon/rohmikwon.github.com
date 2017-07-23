@@ -139,7 +139,7 @@
 </section>
     
     <div class="article-share-wrap">
-      <a data-url="https://rohmikwon.github.io/v2/guide/reactivity.html" data-id="cj5h2dphc001adc9zagmc0tql" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+      <a data-url="https://rohmikwon.github.io/v2/guide/reactivity.html" data-id="cj5h5kdgt0014kc9zldgu2074" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -199,10 +199,8 @@
     })(jQuery);
 </script>
     </div>
-    
-      <div id="comments"></div>
-    
   </article>
+  
 </main>
 
 <script>
@@ -241,32 +239,7 @@
       })
     })
 
-    // gitment
-    var gitmentConfig = "rohmikwon";
-    if (gitmentConfig != "undefined") {
-      var gitment = new Gitment({
-        id: "Reactivity in Depth",
-        owner: "rohmikwon",
-        repo: "rohmikwon.github.io",
-        oauth: {
-          client_id: "829e65afa6fa7096959c",
-          client_secret: "e85b73b6121d9dfb570519f2c3b5ad0932db04fe"
-        },
-        theme: {
-          render(state, instance) {
-            const container = document.createElement('div')
-            container.lang = "en-US"
-            container.className = 'gitment-container gitment-root-container'
-            container.appendChild(instance.renderHeader(state, instance))
-            container.appendChild(instance.renderEditor(state, instance))
-            container.appendChild(instance.renderComments(state, instance))
-            container.appendChild(instance.renderFooter(state, instance))
-            return container;
-          }
-        }
-      })
-      gitment.render(document.getElementById('comments'))
-    }
+    
   })();
 </script>
 
