@@ -1002,6 +1002,10 @@ h2.article-head {
 .author .share-icons .icon-twitter {
   color: #2aa9e0;
 }
+.about-markdown-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .project-app {
   max-width: 1020px;
   min-width: 300px;
