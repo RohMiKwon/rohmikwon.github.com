@@ -886,7 +886,6 @@ h2.article-head {
   width: 100%;
   height: 100%;
   content: '';
-  opacity: 0.25;
   background: url("images/escheres.png");
   background-color: rgba(0,0,0,0.05);
 }
