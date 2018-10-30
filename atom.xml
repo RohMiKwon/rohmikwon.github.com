@@ -5,50 +5,20 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rohmikwon.github.io/"/>
-  <updated>2018-10-30T06:19:20.220Z</updated>
+  <updated>2018-10-30T06:23:16.947Z</updated>
   <id>https://rohmikwon.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>리니지M 사전예약</title>
-    <link href="https://rohmikwon.github.io/2018/10/30/ncsoft/"/>
-    <id>https://rohmikwon.github.io/2018/10/30/ncsoft/</id>
-    <published>2018-10-30T05:45:32.000Z</published>
-    <updated>2018-10-30T06:19:20.220Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="2017년-5월-작업"><a href="#2017년-5월-작업" class="headerlink" title="2017년 5월 작업"></a>2017년 5월 작업</h1><blockquote>
-<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack 등</p>
-</blockquote>
-<p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
-<p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
-<p><img src="/images/project/lineagem_media.jpg" alt="리니지M 미디어 섹션"></p>
-<p><img src="/images/project/lineagem_info.jpg" alt="리니지M 게임소개 섹션"></p>
-<p><img src="/images/project/lineagem_minigame.png" alt="리니지M 미니게임 섹션"></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;2017년-5월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 작업&quot;&gt;&lt;/a&gt;2017년 5월 작업&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;fullpage.js(&lt;a href=&quot;
-    
-    </summary>
-    
-    
-      <category term="fullpage.js" scheme="https://rohmikwon.github.io/tags/fullpage-js/"/>
-    
-  </entry>
   
   <entry>
     <title>SK 브로드밴드 OKSUSU 운영개발</title>
     <link href="https://rohmikwon.github.io/2018/09/27/oksusu/"/>
     <id>https://rohmikwon.github.io/2018/09/27/oksusu/</id>
     <published>2018-09-27T06:34:09.000Z</published>
-    <updated>2018-10-30T06:22:57.907Z</updated>
+    <updated>2018-10-30T06:23:16.947Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2018년-4월-2018년-8월-작업"><a href="#2018년-4월-2018년-8월-작업" class="headerlink" title="2018년 4월 ~ 2018년 8월 작업"></a>2018년 4월 ~ 2018년 8월 작업</h1><blockquote>
-<p>OKSUSU 서비스의 프론트엔드개발을 담당했습니다.<br>주업무는 OKSUSU 웹사이트의 javascript 유지보수 및 개발이였으며 OKSUSU앱 내에 스포츠 관련 웹뷰 페이지를 Vue.js로 제작했습니다.</p>
-<p>사용 기술: vue.js, javascript, webpack 등<br>소스코드 링크 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a></p>
+<p>OKSUSU 서비스의 프론트엔드개발을 담당했습니다.<br>주업무는 OKSUSU 웹사이트의 javascript 유지보수 및 개발이였으며 OKSUSU앱 내에 스포츠 관련 웹뷰 페이지를 Vue.js로 제작했습니다.<br>사용 기술: vue.js, javascript, webpack 등<br>소스코드 링크 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a></p>
 </blockquote>
 <p><img src="/images/project/oksusu.png" alt="옥수수 PC웹 화면"></p>
 <p><img src="/images/project/oksusu_sports_textrelay.jpg" alt="옥수수 스포츠 문자중계 화면"></p>
@@ -84,6 +54,34 @@
     
     
       <category term="hexo" scheme="https://rohmikwon.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리니지M 사전예약</title>
+    <link href="https://rohmikwon.github.io/2017/06/21/ncsoft/"/>
+    <id>https://rohmikwon.github.io/2017/06/21/ncsoft/</id>
+    <published>2017-06-20T15:00:00.000Z</published>
+    <updated>2018-10-30T06:26:58.860Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2017년-5월-2018년-6월-작업"><a href="#2017년-5월-2018년-6월-작업" class="headerlink" title="2017년 5월 ~ 2018년 6월 작업"></a>2017년 5월 ~ 2018년 6월 작업</h1><blockquote>
+<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack 등</p>
+</blockquote>
+<p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
+<p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
+<p><img src="/images/project/lineagem_media.jpg" alt="리니지M 미디어 섹션"></p>
+<p><img src="/images/project/lineagem_info.jpg" alt="리니지M 게임소개 섹션"></p>
+<p><img src="/images/project/lineagem_minigame.png" alt="리니지M 미니게임 섹션"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2017년-5월-2018년-6월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-2018년-6월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 ~ 2018년 6월 작업&quot;&gt;&lt;/a&gt;2017년 5월 ~ 2018년 6월 작업&lt;/
+    
+    </summary>
+    
+    
+      <category term="fullpage.js" scheme="https://rohmikwon.github.io/tags/fullpage-js/"/>
     
   </entry>
   
