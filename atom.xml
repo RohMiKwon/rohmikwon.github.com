@@ -36,28 +36,6 @@
   </entry>
   
   <entry>
-    <title>Hello</title>
-    <link href="https://rohmikwon.github.io/2017/07/24/Hello/"/>
-    <id>https://rohmikwon.github.io/2017/07/24/Hello/</id>
-    <published>2017-07-23T20:00:19.000Z</published>
-    <updated>2017-07-23T20:17:01.454Z</updated>
-    
-    <content type="html"><![CDATA[<p>hexo 기반 블로그 입니다.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;hexo 기반 블로그 입니다.&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="https://rohmikwon.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>리니지M 사전예약</title>
     <link href="https://rohmikwon.github.io/2017/06/21/ncsoft/"/>
     <id>https://rohmikwon.github.io/2017/06/21/ncsoft/</id>
