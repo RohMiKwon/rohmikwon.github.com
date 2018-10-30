@@ -36,14 +36,14 @@
   </entry>
   
   <entry>
-    <title>리니지M 사전예약</title>
-    <link href="https://rohmikwon.github.io/2017/06/21/ncsoft/"/>
-    <id>https://rohmikwon.github.io/2017/06/21/ncsoft/</id>
+    <title>리니지M 사전예약 개발</title>
+    <link href="https://rohmikwon.github.io/2017/06/21/lineagem/"/>
+    <id>https://rohmikwon.github.io/2017/06/21/lineagem/</id>
     <published>2017-06-20T15:00:00.000Z</published>
-    <updated>2018-10-30T06:26:58.860Z</updated>
+    <updated>2018-10-30T07:14:29.230Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2017년-5월-2018년-6월-작업"><a href="#2017년-5월-2018년-6월-작업" class="headerlink" title="2017년 5월 ~ 2018년 6월 작업"></a>2017년 5월 ~ 2018년 6월 작업</h1><blockquote>
-<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack 등</p>
+<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack, 반응형웹 등</p>
 </blockquote>
 <p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
 <p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
@@ -60,6 +60,52 @@
     
     
       <category term="fullpage.js" scheme="https://rohmikwon.github.io/tags/fullpage-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>삼성 글로벌 닷컴 운영</title>
+    <link href="https://rohmikwon.github.io/2016/10/01/samsung/"/>
+    <id>https://rohmikwon.github.io/2016/10/01/samsung/</id>
+    <published>2016-09-30T15:00:00.000Z</published>
+    <updated>2018-10-30T07:14:22.743Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2015년-11월-2016년-10월"><a href="#2015년-11월-2016년-10월" class="headerlink" title="2015년 11월 - 2016년 10월"></a>2015년 11월 - 2016년 10월</h1><blockquote>
+<p>77개국 삼성 글로벌 닷컴 사이트와 프로모션 페이지에 프론트엔드개발 및 운영 업무를 담당하였습니다.<br>해당 사이트는 반응형웹으로 제작되었으며 주로 JS 유지보수를 담당했습니다.<br>사용 기술: html/css, sass, es6, gulp, webpack, 반응형웹 등</p>
+</blockquote>
+<p><img src="/images/project/samsung.jpg" alt="삼성 PC웹 화면"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2015년-11월-2016년-10월&quot;&gt;&lt;a href=&quot;#2015년-11월-2016년-10월&quot; class=&quot;headerlink&quot; title=&quot;2015년 11월 - 2016년 10월&quot;&gt;&lt;/a&gt;2015년 11월 - 2016년 10월&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+    
+      <category term="es6" scheme="https://rohmikwon.github.io/tags/es6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>네이버 커넥트 edWith 서비스 운영 및 개발</title>
+    <link href="https://rohmikwon.github.io/2015/07/01/edwith/"/>
+    <id>https://rohmikwon.github.io/2015/07/01/edwith/</id>
+    <published>2015-06-30T15:00:00.000Z</published>
+    <updated>2018-10-30T07:26:53.735Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2015년-04월-2015년-07월"><a href="#2015년-04월-2015년-07월" class="headerlink" title="2015년 04월 - 2015년 07월"></a>2015년 04월 - 2015년 07월</h1><blockquote>
+<p>네이버 커넥트 edwith 서비스의 초창기 버전 개발 및 운영 업무를 담당했습니다.<br>Backbone.js 기반으로 사이트를 제작했습니다.<br>사용 기술: backbone.js, jquery, html/css, sass, es6, grunt 등</p>
+</blockquote>
+<p><img src="/images/project/next_mooc.jpg" alt="삼성 PC웹 화면"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2015년-04월-2015년-07월&quot;&gt;&lt;a href=&quot;#2015년-04월-2015년-07월&quot; class=&quot;headerlink&quot; title=&quot;2015년 04월 - 2015년 07월&quot;&gt;&lt;/a&gt;2015년 04월 - 2015년 07월&lt;/h1&gt;&lt;
+    
+    </summary>
+    
     
   </entry>
   
