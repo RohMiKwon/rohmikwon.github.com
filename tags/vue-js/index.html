@@ -31,7 +31,7 @@
       
         <li class="list-item">
           
-            <a href="/" class="item-link active">Home</a>
+            <a href="/" class="item-link">Home</a>
           
         </li>
       
@@ -70,7 +70,7 @@
         
           <li class="menu-item">
             
-              <a href="/" class="menu-link mobile-active">Home</a>
+              <a href="/" class="menu-link">Home</a>
             
           </li>
         
@@ -103,83 +103,58 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="article-banner">
+  <h2>Archives</h2>
+  <p class="post-date"></p>
+</div>
+<main class="app-body" id="archives">
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/10/30/ncsoft/">리니지지M 사전예약</a>
-      </h2>
-      <p class="article-date">2018년 10월 30일</p>
-      
-        
-  <a href="/tags#fullpage.js" >
-    <span class="tag-code">fullpage.js</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          2017년 5월 작업
-fullpage.js(https://github.com/alvarotrigo/fullPage.js/) 기반의 반응형 사이트 입니다.사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack 등
-
-
-
-
-
-
-
-        
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2018
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2018/10/30/ncsoft/" class="archive-title">리니지지M 사전예약</a>
+        <p class="archive-date">10-30</p>
       </div>
-      <a class="more" href="/2018/10/30/ncsoft/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/09/27/oksusu/">oksusu 스포츠 문자중계 (Vuejs)</a>
-      </h2>
-      <p class="article-date">2018년 9월 27일</p>
-      
-        
-  <a href="/tags#vue.js" >
-    <span class="tag-code">vue.js</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          2018년 7월 작업
-Vue.js 기반으로 한 웹뷰 페이지를 제작했습니다.재현 경로: oksusu App &gt; 스포츠 &gt; 프로야구 &gt; 문자중계사용 기술: vue.js 등소스코드 링크 : https://github.com/RohMiKwon/textr ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/09/27/oksusu/" class="archive-title">oksusu 스포츠 문자중계 (Vuejs)</a>
+        <p class="archive-date">09-27</p>
       </div>
-      <a class="more" href="/2018/09/27/oksusu/">Read more</a>
-    </article>
+    
+  </div>
+</section>
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/07/24/Hello/">Hello</a>
-      </h2>
-      <p class="article-date">2017년 7월 24일</p>
-      
-        
-  <a href="/tags#hexo" >
-    <span class="tag-code">hexo</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          hexo 기반 블로그 입니다.
-
-        
+    <section class="time-section">
+  <h1 class="section-year">
+    2017
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2017/07/24/Hello/" class="archive-title">Hello</a>
+        <p class="archive-date">07-24</p>
       </div>
-      <a class="more" href="/2017/07/24/Hello/">Read more</a>
-    </article>
-  
-
+    
+  </div>
+</section>
   
 </main>
 
-
+<script>
+  (function () {
+    var url = 'https://rohmikwon.github.io/tags/vue-js/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
+  })();
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
@@ -229,5 +204,5 @@ Vue.js 기반으로 한 웹뷰 페이지를 제작했습니다.재현 경로: ok
 <!-- Baidu Tongji -->
 
 <script src="/js/script.js"></script>
-  <script async>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
-</script></body></html>
+  </body>
+</html>

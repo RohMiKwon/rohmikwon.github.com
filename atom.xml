@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rohmikwon.github.io/"/>
-  <updated>2018-10-30T06:04:58.218Z</updated>
+  <updated>2018-10-30T06:18:13.044Z</updated>
   <id>https://rohmikwon.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
@@ -15,10 +15,10 @@
     <link href="https://rohmikwon.github.io/2018/10/30/ncsoft/"/>
     <id>https://rohmikwon.github.io/2018/10/30/ncsoft/</id>
     <published>2018-10-30T05:45:32.000Z</published>
-    <updated>2018-10-30T06:04:58.218Z</updated>
+    <updated>2018-10-30T06:18:13.044Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2017년-5월-작업"><a href="#2017년-5월-작업" class="headerlink" title="2017년 5월 작업"></a>2017년 5월 작업</h1><blockquote>
-<p>fullpage.js 기반 (<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>)</p>
+<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack 등</p>
 </blockquote>
 <p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
 <p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
@@ -30,10 +30,12 @@
     <summary type="html">
     
       &lt;h1 id=&quot;2017년-5월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 작업&quot;&gt;&lt;/a&gt;2017년 5월 작업&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;fullpage.js 기반 (&lt;a hr
+&lt;p&gt;fullpage.js(&lt;a href=&quot;
     
     </summary>
     
+    
+      <category term="fullpage.js" scheme="https://rohmikwon.github.io/tags/fullpage-js/"/>
     
   </entry>
   
@@ -42,10 +44,10 @@
     <link href="https://rohmikwon.github.io/2018/09/27/oksusu/"/>
     <id>https://rohmikwon.github.io/2018/09/27/oksusu/</id>
     <published>2018-09-27T06:34:09.000Z</published>
-    <updated>2018-09-27T07:43:26.500Z</updated>
+    <updated>2018-10-30T06:18:14.236Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2018년-7월-작업"><a href="#2018년-7월-작업" class="headerlink" title="2018년 7월 작업"></a>2018년 7월 작업</h1><blockquote>
-<p>oksusu App &gt; 스포츠 &gt; 프로야구 &gt; 문자중계<br>소스코드 링크 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a></p>
+<p>Vue.js 기반으로 한 웹뷰 페이지를 제작했습니다.<br>재현 경로: oksusu App &gt; 스포츠 &gt; 프로야구 &gt; 문자중계<br>사용 기술: vue.js 등<br>소스코드 링크 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a></p>
 </blockquote>
 <p><img src="/images/oksusu_sports_textrelay.jpg" alt="옥수수 스포츠 문자중계 화면"></p>
 ]]></content>
@@ -53,12 +55,12 @@
     <summary type="html">
     
       &lt;h1 id=&quot;2018년-7월-작업&quot;&gt;&lt;a href=&quot;#2018년-7월-작업&quot; class=&quot;headerlink&quot; title=&quot;2018년 7월 작업&quot;&gt;&lt;/a&gt;2018년 7월 작업&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;oksusu App &amp;gt; 스포츠 &amp;
+&lt;p&gt;Vue.js 기반으로 한 웹뷰 페이지를
     
     </summary>
     
     
-      <category term="Vuejs" scheme="https://rohmikwon.github.io/tags/Vuejs/"/>
+      <category term="vue.js" scheme="https://rohmikwon.github.io/tags/vue-js/"/>
     
   </entry>
   
