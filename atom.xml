@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rohmikwon.github.io/"/>
-  <updated>2018-10-30T06:23:16.947Z</updated>
+  <updated>2018-10-30T07:45:21.128Z</updated>
   <id>https://rohmikwon.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
@@ -15,10 +15,10 @@
     <link href="https://rohmikwon.github.io/2018/09/27/oksusu/"/>
     <id>https://rohmikwon.github.io/2018/09/27/oksusu/</id>
     <published>2018-09-27T06:34:09.000Z</published>
-    <updated>2018-10-30T06:23:16.947Z</updated>
+    <updated>2018-10-30T07:45:21.128Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2018년-4월-2018년-8월-작업"><a href="#2018년-4월-2018년-8월-작업" class="headerlink" title="2018년 4월 ~ 2018년 8월 작업"></a>2018년 4월 ~ 2018년 8월 작업</h1><blockquote>
-<p>OKSUSU 서비스의 프론트엔드개발을 담당했습니다.<br>주업무는 OKSUSU 웹사이트의 javascript 유지보수 및 개발이였으며 OKSUSU앱 내에 스포츠 관련 웹뷰 페이지를 Vue.js로 제작했습니다.<br>사용 기술: vue.js, javascript, webpack 등<br>소스코드 링크 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a></p>
+    <content type="html"><![CDATA[<h1 id="2018년-4월-9일-2018년-8월-8일"><a href="#2018년-4월-9일-2018년-8월-8일" class="headerlink" title="2018년 4월 9일 ~ 2018년 8월 8일"></a>2018년 4월 9일 ~ 2018년 8월 8일</h1><blockquote>
+<p>OKSUSU 서비스의 프론트엔드개발을 담당했습니다.<br>주업무는 OKSUSU 웹사이트의 javascript 유지보수 및 개발이였으며 OKSUSU앱 내에 스포츠 관련 웹뷰 페이지를 vue.js로 제작했습니다.<br>사용 기술: vue.js, javascript/jquery, webpack 등<br>소스코드 : <a href="https://github.com/RohMiKwon/textrelay" target="_blank" rel="external">https://github.com/RohMiKwon/textrelay</a><br>옥수수 웹사이트 : <a href="http://www.oksusu.com/" target="_blank" rel="external">http://www.oksusu.com/</a></p>
 </blockquote>
 <p><img src="/images/project/oksusu.png" alt="옥수수 PC웹 화면"></p>
 <p><img src="/images/project/oksusu_sports_textrelay.jpg" alt="옥수수 스포츠 문자중계 화면"></p>
@@ -26,7 +26,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2018년-4월-2018년-8월-작업&quot;&gt;&lt;a href=&quot;#2018년-4월-2018년-8월-작업&quot; class=&quot;headerlink&quot; title=&quot;2018년 4월 ~ 2018년 8월 작업&quot;&gt;&lt;/a&gt;2018년 4월 ~ 2018년 8월 작업&lt;/
+      &lt;h1 id=&quot;2018년-4월-9일-2018년-8월-8일&quot;&gt;&lt;a href=&quot;#2018년-4월-9일-2018년-8월-8일&quot; class=&quot;headerlink&quot; title=&quot;2018년 4월 9일 ~ 2018년 8월 8일&quot;&gt;&lt;/a&gt;2018년 4월 9일 ~ 2
     
     </summary>
     
@@ -40,10 +40,10 @@
     <link href="https://rohmikwon.github.io/2017/06/21/lineagem/"/>
     <id>https://rohmikwon.github.io/2017/06/21/lineagem/</id>
     <published>2017-06-20T15:00:00.000Z</published>
-    <updated>2018-10-30T07:14:29.230Z</updated>
+    <updated>2018-10-30T07:44:14.848Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2017년-5월-2018년-6월-작업"><a href="#2017년-5월-2018년-6월-작업" class="headerlink" title="2017년 5월 ~ 2018년 6월 작업"></a>2017년 5월 ~ 2018년 6월 작업</h1><blockquote>
-<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, es6, thymeleaf, gulp, webpack, 반응형웹 등</p>
+    <content type="html"><![CDATA[<h1 id="2017년-5월-2018년-6월"><a href="#2017년-5월-2018년-6월" class="headerlink" title="2017년 5월 ~ 2018년 6월"></a>2017년 5월 ~ 2018년 6월</h1><blockquote>
+<p>fullpage.js(<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>) 기반의 반응형 사이트 입니다.<br>사용 기술: html/css, sass, javascript/jquery, es6, thymeleaf, gulp, webpack, 반응형웹 등</p>
 </blockquote>
 <p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
 <p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
@@ -54,7 +54,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2017년-5월-2018년-6월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-2018년-6월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 ~ 2018년 6월 작업&quot;&gt;&lt;/a&gt;2017년 5월 ~ 2018년 6월 작업&lt;/
+      &lt;h1 id=&quot;2017년-5월-2018년-6월&quot;&gt;&lt;a href=&quot;#2017년-5월-2018년-6월&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 ~ 2018년 6월&quot;&gt;&lt;/a&gt;2017년 5월 ~ 2018년 6월&lt;/h1&gt;&lt;blockquo
     
     </summary>
     
@@ -68,17 +68,17 @@
     <link href="https://rohmikwon.github.io/2016/10/01/samsung/"/>
     <id>https://rohmikwon.github.io/2016/10/01/samsung/</id>
     <published>2016-09-30T15:00:00.000Z</published>
-    <updated>2018-10-30T07:14:22.743Z</updated>
+    <updated>2018-10-30T07:43:49.448Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2015년-11월-2016년-10월"><a href="#2015년-11월-2016년-10월" class="headerlink" title="2015년 11월 - 2016년 10월"></a>2015년 11월 - 2016년 10월</h1><blockquote>
-<p>77개국 삼성 글로벌 닷컴 사이트와 프로모션 페이지에 프론트엔드개발 및 운영 업무를 담당하였습니다.<br>해당 사이트는 반응형웹으로 제작되었으며 주로 JS 유지보수를 담당했습니다.<br>사용 기술: html/css, sass, es6, gulp, webpack, 반응형웹 등</p>
+    <content type="html"><![CDATA[<h1 id="2015년-11월-2016년-10월"><a href="#2015년-11월-2016년-10월" class="headerlink" title="2015년 11월 ~ 2016년 10월"></a>2015년 11월 ~ 2016년 10월</h1><blockquote>
+<p>77개국 삼성 글로벌 닷컴 사이트와 프로모션 페이지에 프론트엔드개발 및 운영 업무를 담당하였습니다.<br>해당 사이트는 반응형웹으로 제작되었으며 주로 JS 유지보수를 담당했습니다.<br>사용 기술: html/css, sass, es6, javascript/jquery, gulp, webpack, 반응형웹 등<br>삼성 글로벌 닷컴 : <a href="https://www.samsung.com/sec/" target="_blank" rel="external">https://www.samsung.com/sec/</a></p>
 </blockquote>
 <p><img src="/images/project/samsung.jpg" alt="삼성 PC웹 화면"></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2015년-11월-2016년-10월&quot;&gt;&lt;a href=&quot;#2015년-11월-2016년-10월&quot; class=&quot;headerlink&quot; title=&quot;2015년 11월 - 2016년 10월&quot;&gt;&lt;/a&gt;2015년 11월 - 2016년 10월&lt;/h1&gt;&lt;
+      &lt;h1 id=&quot;2015년-11월-2016년-10월&quot;&gt;&lt;a href=&quot;#2015년-11월-2016년-10월&quot; class=&quot;headerlink&quot; title=&quot;2015년 11월 ~ 2016년 10월&quot;&gt;&lt;/a&gt;2015년 11월 ~ 2016년 10월&lt;/h1&gt;&lt;
     
     </summary>
     
@@ -88,16 +88,38 @@
   </entry>
   
   <entry>
+    <title>메일나라 반응형웹사이트 제작</title>
+    <link href="https://rohmikwon.github.io/2015/10/08/mailnara/"/>
+    <id>https://rohmikwon.github.io/2015/10/08/mailnara/</id>
+    <published>2015-10-07T15:00:00.000Z</published>
+    <updated>2018-10-30T07:46:05.567Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2015년-8월-24일-2015년-10월-8일"><a href="#2015년-8월-24일-2015년-10월-8일" class="headerlink" title="2015년 8월 24일 ~ 2015년 10월 8일"></a>2015년 8월 24일 ~ 2015년 10월 8일</h1><blockquote>
+<p>Bootstrap을 활용한 반응형웹사이트를 제작했습니다.<br>사용 기술: bootstrap, html/css, javascript/jquery, 반응형웹 등</p>
+</blockquote>
+<p><img src="/images/project/mailnara.jpg" alt="메일나라 반응형웹사이트"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2015년-8월-24일-2015년-10월-8일&quot;&gt;&lt;a href=&quot;#2015년-8월-24일-2015년-10월-8일&quot; class=&quot;headerlink&quot; title=&quot;2015년 8월 24일 ~ 2015년 10월 8일&quot;&gt;&lt;/a&gt;2015년 8월 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>네이버 커넥트 edWith 서비스 운영 및 개발</title>
     <link href="https://rohmikwon.github.io/2015/07/01/edwith/"/>
     <id>https://rohmikwon.github.io/2015/07/01/edwith/</id>
     <published>2015-06-30T15:00:00.000Z</published>
-    <updated>2018-10-30T07:26:53.735Z</updated>
+    <updated>2018-10-30T07:46:23.215Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2015년-04월-2015년-07월"><a href="#2015년-04월-2015년-07월" class="headerlink" title="2015년 04월 - 2015년 07월"></a>2015년 04월 - 2015년 07월</h1><blockquote>
-<p>네이버 커넥트 edwith 서비스의 초창기 버전 개발 및 운영 업무를 담당했습니다.<br>Backbone.js 기반으로 사이트를 제작했습니다.<br>사용 기술: backbone.js, jquery, html/css, sass, es6, grunt 등</p>
+<p>네이버 커넥트 edwith 서비스의 초창기 버전 개발 및 운영 업무를 담당했습니다.<br>Backbone.js 기반으로 사이트를 제작했습니다.<br>사용 기술: backbone.js, javascript/jquery, html/css, sass, grunt 등<br>커넥트 edWith : <a href="https://www.edwith.org/" target="_blank" rel="external">https://www.edwith.org/</a></p>
 </blockquote>
-<p><img src="/images/project/next_mooc.jpg" alt="삼성 PC웹 화면"></p>
+<p><img src="/images/project/next_mooc.jpg" alt="커넥트 edWith PC웹 화면"></p>
 ]]></content>
     
     <summary type="html">
