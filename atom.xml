@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rohmikwon.github.io/"/>
-  <updated>2018-10-30T06:01:51.827Z</updated>
+  <updated>2018-10-30T06:04:58.218Z</updated>
   <id>https://rohmikwon.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
@@ -15,9 +15,12 @@
     <link href="https://rohmikwon.github.io/2018/10/30/ncsoft/"/>
     <id>https://rohmikwon.github.io/2018/10/30/ncsoft/</id>
     <published>2018-10-30T05:45:32.000Z</published>
-    <updated>2018-10-30T06:01:51.827Z</updated>
+    <updated>2018-10-30T06:04:58.218Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2017년-5월-작업"><a href="#2017년-5월-작업" class="headerlink" title="2017년 5월 작업"></a>2017년 5월 작업</h1><p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
+    <content type="html"><![CDATA[<h1 id="2017년-5월-작업"><a href="#2017년-5월-작업" class="headerlink" title="2017년 5월 작업"></a>2017년 5월 작업</h1><blockquote>
+<p>fullpage.js 기반 (<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank" rel="external">https://github.com/alvarotrigo/fullPage.js/</a>)</p>
+</blockquote>
+<p><img src="/images/project/lineagem.png" alt="리니지M 사전예약 인트로 화면"></p>
 <p><img src="/images/project/lineagem_preorder.png" alt="리니지M 사전예약 화면"></p>
 <p><img src="/images/project/lineagem_media.jpg" alt="리니지M 미디어 섹션"></p>
 <p><img src="/images/project/lineagem_info.jpg" alt="리니지M 게임소개 섹션"></p>
@@ -26,7 +29,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2017년-5월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 작업&quot;&gt;&lt;/a&gt;2017년 5월 작업&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/images/project/lineagem
+      &lt;h1 id=&quot;2017년-5월-작업&quot;&gt;&lt;a href=&quot;#2017년-5월-작업&quot; class=&quot;headerlink&quot; title=&quot;2017년 5월 작업&quot;&gt;&lt;/a&gt;2017년 5월 작업&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;fullpage.js 기반 (&lt;a hr
     
     </summary>
     
